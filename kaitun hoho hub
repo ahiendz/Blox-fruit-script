@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded()
 _G.SupperFixLag = true
 _G["Use Webhook"] = {
-    Enable = false,
+    Enable = true,
     Webhook = "https://discord.com/api/webhooks/1205413016729030686/96TudPil4wVaGrZ9qw3oAWcwTSoMviW0pn3s4z7SDtPPxfURVAnu5DshApE8Z36loB5f",
 }
 _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] = {
