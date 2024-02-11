@@ -1,17 +1,17 @@
-_G.JoinTeam = "Pirate" -- "Marine" & "Pirate"
+_G.JoinTeam = "Marine" -- "Marine" & "Pirate"
 _G.BountyConfig = {
 	["Webhook"] = {
-		["Enabled"] = false,
-		["Url"] = "",
+		["Enabled"] = true,
+		["Url"] = "https://discord.com/api/webhooks/1205413016729030686/96TudPil4wVaGrZ9qw3oAWcwTSoMviW0pn3s4z7SDtPPxfURVAnu5DshApE8Z36loB5f",
 		["CustomImage"] = "", -- if not in put = auto img
 		["Mode Send"] = {"On Bounty Change","On Server Hop"}
 	},
 	["Fps Lock"] = {
-		["Enabled"] = false, -- not recommend
+		["Enabled"] = true, -- not recommend
 		["Fps"] = 30
 	},
 	["Lock Bounty"] = {
-		["Enabled"] = false,
+		["Enabled"] = true,
 		["Cap"] = 10 -- ( mean 30m )
 	},
 	["Add On"] = {
@@ -19,7 +19,7 @@ _G.BountyConfig = {
 		["Tp Around"] = false,
 		["Server Hop Region"] = "", -- find with u self '=' can use abbreviation like jap , tok if not put = auto
 		["Add Range"] = 0, -- add range from u and target
-		["Black Screen"] = true,
+		["Black Screen"] = false,
 		["Hop Server Time"] = {
 			["Enabled"] = true,
 			["Delay Hop Time"] = 170, -- 2 min 30 sec -- and normal is hop when kill all player in server
