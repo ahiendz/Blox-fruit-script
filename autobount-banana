@@ -10,7 +10,7 @@ spawn(function()
     end
 end)
 getgenv().Setting = {
-    ["Team"] = "Pirates", --Marines,Pirates
+    ["Team"] = "Marines", --Marines,Pirates
     ["Webhook"] = {
         ["Enabled"] = "false", --Your Url
     },
@@ -33,9 +33,9 @@ getgenv().Setting = {
     ["Race V4"] = {
         ["Enable"] = true,
     },
-    ["Invisible"] = false,
+    ["Invisible"] = true,
     ["White Screen"] = false,
-    ["GunMethod"] = true, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
+    ["GunMethod"] = false, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
     ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = {
         ["Melee"] = {
@@ -85,7 +85,7 @@ getgenv().Setting = {
             },
         },
         ["Gun"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
@@ -99,16 +99,16 @@ getgenv().Setting = {
             },
         },
         ["Sword"] = {
-            ["Enable"] = false,
-            ["Delay"] = 1,
+            ["Enable"] = true,
+            ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
+                    ["HoldTime"] = 0.1,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
+                    ["HoldTime"] = 0.1,
                 },
             },
         },
