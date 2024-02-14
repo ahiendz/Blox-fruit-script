@@ -1,3 +1,5 @@
+
+_G.KaitanMode = true
 shared.Team = "Pirates"
 getgenv().Configs = {
     FpsBoost = true,
@@ -69,8 +71,9 @@ getgenv().Configs = {
     -- Devil Fruit
         
     SelectMainDF = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- ผลหลักที่จะกินเเทนผลรอง
-    SelectSubDF = {"Ice-Ice","Sand-Sand","Dark-Dark","Quake-Quake","Light-Light"}, -- ผลรองจะกินไว้ก่อนเเล้วพอผลหลักมีก้จะเปลียนไปกินผิดหลัก
-    AllowEatDFInventory = true,
+    SelectSubDF = 
+{}, -- ผลรองจะกินไว้ก่อนเเล้วพอผลหลักมีก้จะเปลียนไปกินผิดหลัก
+    AllowEatDFInventory = false,
     StartSniper = true,
         
     -- RAM
