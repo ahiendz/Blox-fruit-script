@@ -1,0 +1,63 @@
+students = []
+
+
+while True:
+    command = input("Enter a command (add, list, find, update, delete, exit): ")
+
+    def list():
+        for student in students:
+            print(f"{student['name']} is {student['age']} years old and is in grade {student['grade']}. Status: {student['status']}. Average Score: {student['avg_score']}")
+
+    def add():
+        name = input("Enter the student's name: ")
+        age = int(input("Enter the student's age: "))
+        grade = int(input("Enter the student's grade: "))
+        status = input("Enter the student's status (transfer/currently studying): ")
+        avg_score = float(input("Enter the student's average score: "))
+        students.append({'name': name, 'age': age, 'grade': grade, 'status': status, 'avg_score': avg_score})
+
+    def find():
+        name = input("Enter the student's name: ")
+        for student in students:
+            if student['name'] == name:
+                print(f"{student['name']} is {student['age']} years old and is in grade {student['grade']}. Status: {student['status']}. Average Score: {student['avg_score']}")
+                break
+        else:
+            print(f"No student found with the name {name}.")
+
+    def update():
+        name = input("Enter the student's name: ")
+        for student in students:
+            if student['name'] == name:
+                student['age'] = int(input("Enter the student's new age: "))
+                student['grade'] = int(input("Enter the student's new grade: "))
+                student['status'] = input("Enter the student's new status (transfer/currently studying): ")
+                student['avg_score'] = float(input("Enter the student's new average score: "))
+                break
+        else:
+            print(f"No student found with the name {name}.")
+
+    def delete():
+        name = input("Enter the student's name: ")
+        for i, student in enumerate(students):
+            if student['name'] == name:
+                del students[i]
+                print(f"Delete stundent {name}")
+                break
+            else:
+                print(f"No student found with the name {name}.")
+
+    if command == "add":
+        add()
+    elif command == "list":
+        list()
+    elif command == "find":
+        find()
+    elif command == "update":
+        update()
+    elif command == "delete":
+        delete()
+    elif command == "exit":
+        break
+    else:
+        print("Invalid command.")
