@@ -6,10 +6,10 @@ script_key="bnReBGsIrXNEdhZIkLuIJqvGBskjbRXc";
 DelayTime = 300
 getgenv().FpsBoost = true
 getgenv().Setting = {
-    ["Team"] = "Pirate", --Marines
+    ["Team"] = "Marines", --Marines
     ["Webhook"] = {
-        ["Url"] = "",
-        ["Enabled"] = false,
+        ["Url"] = "https://discord.com/api/webhooks/1205413016729030686/96TudPil4wVaGrZ9qw3oAWcwTSoMviW0pn3s4z7SDtPPxfURVAnu5DshApE8Z36loB5f",
+        ["Enabled"] = true,
         ["Embed"] = true,
         ["StoredFruit"] = true,
         ["ImageEmbed"] = true,
@@ -21,7 +21,7 @@ getgenv().Setting = {
     ["Panel"] = false,
     ["FpsBoost"] = {
         Enable = true,
-        Mode = "Lite",--Lite: Just Lower Graphics, Full: Completely Make All Objects Transparent
+        Mode = "Full",--Lite: Just Lower Graphics, Full: Completely Make All Objects Transparent
     },
     ["Hide Theme"] = true,
     ["3D Render Disable"] = true,
@@ -58,18 +58,18 @@ getgenv().Setting = {
     ["Auto Use Race V4"] = true, -- No Way you are turning this off
     ["Auto Dash If Mink V4"] = false,
     ["Auto Dash If Ghoul V4"] = false,
-    ["Spam All Skill On Race Transform V4"] = false,
+    ["Spam All Skill On Race Transform V4"] = true,
     ["Failed To Load Data"] = {
         Rejoin = true,
-        TimeToCheck = 10,
+        TimeToCheck = 30,
     },
     ["Detect KeyWords"] = { -- If There Is A Person Says A Key Word In Chat, It Will Stop Auto Bounty And  Server Hop
         Enable = false,
         Words = { "Hacker", "Exploiter", "Scripter", "Script", "Hack"}
     },
-    AutoConfigMelee = false,
-    AutoConfigSword = false,
-    AutoConfigFruit = false,
+    AutoConfigMelee = true,
+    AutoConfigSword = true,
+    AutoConfigFruit = true,
     SwitchPlayerKeybind = "G", -- Except Y Keybind
     ["LimitServerHopTime"] ={ -- Only Hop After "Time" Seconds
         Enable = false,
@@ -92,9 +92,9 @@ getgenv().Setting = {
         }
     },
     ["ChatKill"] = {
-        Enable = true,
+        Enable = false,
         Chat = {
-            "Go Buy W-azure Now","I Got A Gaming Chair","I'm Just Too Good"
+            "Go Buy W-azure Now","cf by mwing8","cay ko"
         },
     },
     ["Mention"] = {
@@ -108,15 +108,15 @@ getgenv().Setting = {
     },
     ["LockBounty"] = {
         ["Enable"] = true,
-        ["Cap"] = 10000000,
+        ["Cap"] = 30000000,
         ["Action"] = "Kick", -- Kick, Shutdown
         ["SendMessage"] = true,
         ["Message"] = "Congratulation You Have Reached The Bounty Cap MyBounty 🔥 🔥 :fireworks: :fireworks: :fireworks:" -- It Will Replace MyBounty With Your Current Bounty, Add Ping Everyone If You Want
     },
     ["Click"] = {
         ["Enable"] = true,
-        ["FastClick"] = false,
-        ["OnLowHealthDisable"] = true,
+        ["FastClick"] = true,
+        ["OnLowHealthDisable"] = false,
         ["LowHealth"] = 3000,
     },
     ["Misc"] = {
@@ -124,8 +124,8 @@ getgenv().Setting = {
         ["AutoBuySurprise"] = false,
     },
     ["Invisible"] = false, -- Self Explain
-    ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
-    ["GunMethod"] = true, --Use Melee,Gun Will automaticly disable invisible for things
+    ["IgnoreFriends"] = true, --Server Hop When Your friends in your server
+    ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
         LessSusKillTest=true,
         StartHealth = 2000, -- Below Is Setting For Decrease Sus Kill From Gun Method
@@ -137,7 +137,7 @@ getgenv().Setting = {
         CustomIcon = false,
         Image = "sticker.png", -- The Path Is: W-azure/AutoBounty/Notify
     },
-    ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
+    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
@@ -145,19 +145,19 @@ getgenv().Setting = {
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["HoldTime"] = 0.2,
+                    ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0.1,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["TimeToNextSkill"] = 0,
                 },
 
                 ["C"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["HoldTime"] = 2,
+                    ["TimeToNextSkill"] = 0,
                 },
             },
         },
@@ -194,8 +194,8 @@ getgenv().Setting = {
             },
         },
         ["Sword"] = {
-            ["Enable"] = false,
-            ["Delay"] = 0.5,
+            ["Enable"] = true,
+            ["Delay"] = 1,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -204,14 +204,14 @@ getgenv().Setting = {
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.2,
+                    ["HoldTime"] = 0.5,
                     ["TimeToNextSkill"] = 0,
                 },
             },
         },
         ["Gun"] = {
-            ["Enable"] = true,
-            ["Delay"] = 1.5,
+            ["Enable"] = false,
+            ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
