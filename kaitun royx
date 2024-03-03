@@ -34,7 +34,7 @@ _G.KaitunConfig = {
 
     ["White Sreen"] = true,
 
-    ["LimitFragment"] = 15000,
+    ["LimitFragment"] = 10000,
 
     -- item
 
@@ -72,8 +72,8 @@ _G.KaitunConfig = {
 
     -- Add On
     ["Farm When Lvl Max"] = "Katakuri", -- Bone , Katakuri , Coco
-    ["Race Lock"] = "Mink", -- Human , Mink , Fishman , put other mean not lock
-    ["FPS Cap"] = 15,
+    ["Race Lock"] = "Human", -- Human , Mink , Fishman , put other mean not lock
+    ["FPS Cap"] = 30,
 
     ["Buy Haki Color"] = true, -- will buy only Snow White,Pure Red,Winter Sky
     ["Auto Legendary Sword"] = true,
