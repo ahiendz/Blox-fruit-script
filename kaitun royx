@@ -67,7 +67,7 @@ _G.KaitunConfig = {
     -- sea 3
     ["CDK"] = true,
     ["Tushita"] = true,
-    ["Yama"] = true,
+    ["Yama"] = false,
     ["Soul Guitar"] = true,
 
     -- Add On
