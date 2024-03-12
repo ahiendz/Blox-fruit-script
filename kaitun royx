@@ -86,3 +86,6 @@ _G.KaitunConfig = {
 	["Lock Fps Now"] = true,
 	["White Screen"] = false,
 }
+_G.Key = "PRGFJ-I050F-19HI0"
+_G.DiscordId = "1086893151513477131"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
