@@ -60,7 +60,7 @@ _G.KaitunConfig = {
 
     -- sea 2
     ["Auto Factory"] = true,
-    ["Rengoku"] = false,
+    ["Rengoku"] = true,
     ["Sea 3 Hop"] = true, -- hop to find fruit
     ["Race v3"] = true,
     
