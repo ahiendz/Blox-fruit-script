@@ -13,6 +13,7 @@ _G.KaitunConfig = {
         auto go sea 2
         skip farm level
         saber
+        kill Greybeard (bisento v2)
 
         / sea 2
         auto go sea 3
@@ -21,46 +22,58 @@ _G.KaitunConfig = {
         bartilo
 
         / sea 3
-        kill soul reaper,
-        kill dough king,
-        kill cake prince
-        kill rip indra
-        kill Beautiful Pirate
+        kill boss
 
         dough awaking
+        CDK
         elite hunter
-
-        
-
     ]]
     ["Auto Fruit"] = true, -- tween to fruit
 
     ["RedeemCode Level"] = 2,
 
-    ["Black Sreen"] = true,
+    ["White Sreen"] = true,
 
-    ["LimitFragment"] = 56789,
+    ["LimitFragment"] = 100000,
+
+    -- item
+
+    ["Boss List"] = { -- put boss for farm item ---pls dont put boss that have requirement (like Saber boss dofrmigo) because it already kill if can
+        "The Saw [Lv. 100] [Boss]",
+        "Greybeard [Lv. 750] [Raid Boss]",
+    
+        "Darkbeard [Lv. 1000] [Raid Boss]",
+        "Cursed Captain [Lv. 1325] [Raid Boss]",
+
+        "Captain Elephant [Lv. 1875] [Boss]",
+        "Soul Reaper [Lv. 2100] [Raid Boss]",
+        "Dough King [Lv. 2300] [Raid Boss]",
+        "Cake Prince [Lv. 2300] [Raid Boss]",
+        "rip_indra True Form [Lv. 5000] [Raid Boss]",
+        "Beautiful Pirate [Lv. 1950] [Boss]",
+        "Cake Queen [Lv. 2175] [Boss]"
+    },
 
     -- sea 1
     ["PlayerHunter"] = true, -- will do skip lvl too
-    ["Player Hunter Hop"] = false,
+    ["Player Hunter Hop"] = true,
 
     -- sea 2
     ["Auto Factory"] = true,
-    ["Rengoku"] = false,
-    ["Sea 3 Hop"] = false, -- hop to find fruit
+    ["Rengoku"] = true,
+    ["Sea 3 Hop"] = true, -- hop to find fruit
     ["Race v3"] = true,
     
     -- sea 3
     ["CDK"] = true,
     ["Tushita"] = true,
     ["Yama"] = true,
-    ["Soul Guitar"] = false,
+    ["Soul Guitar"] = true,
 
     -- Add On
-    ["Farm When Lvl Max"] = "Bone", -- Bone , Katakuri , Coco
-    ["Race Lock"] = "notlock", -- Human , Mink , Fishman , put other mean not lock
-    ["FPS Cap"] = 25,
+    ["Farm When Lvl Max"] = "Katakuri", -- Bone , Katakuri , Coco
+    ["Race Lock"] = "Human", -- Human , Mink , Fishman , put other mean not lock
+    ["FPS Cap"] = 15,
 
     ["Buy Haki Color"] = true, -- will buy only Snow White,Pure Red,Winter Sky
     ["Auto Legendary Sword"] = true,
@@ -71,14 +84,23 @@ _G.KaitunConfig = {
     ["Select Rarity"] = {"Mythical","Legendary"}, -- Common , Uncommon,Rare,Legendary,Mythical
 
     -- Fruit
-    ["Select Main Devil Fruit Sniper"] = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough","T-Rex-T-Rex","Leopard-Leopard","Kitsune-Kitsune","Mammoth-Mammoth"}, -- if have will eat
-    ["Select Sub Devil Fruit Sinper"] = {"Buddha-Human:Buddha","Sound-Sound","Blizzard-Blizzard","Rumble-Rumble","Control-Control","Bird:Phoenix-Bird:Phoenix","Shadow-Shadow","Flame-Flame","Ice-Ice","Love-Love","Light-Light","Magma-Magma","Quake-Quake"}, -- will eat if not have main fruit
-    ["Allow Eat Fruit In Inventory"] = false,
+    ["Select Main Devil Fruit Sniper"] = {}, -- if have will eat
+    ["Select Sub Devil Fruit Sinper"] = {}, -- will eat if not have main fruit
+    ["Allow Eat Fruit In Inventory"] = true,
     ["Start Sniper"] = true,
     
     -- Fruit2
-    ["Safe Fruit"] = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough","T-Rex-T-Rex","Leopard-Leopard","Kitsune-Kitsune","Mammoth-Mammoth","Buddha-Human:Buddha","Sound-Sound","Blizzard-Blizzard","Rumble-Rumble","Control-Control","Bird:Phoenix-Bird:Phoenix","Shadow-Shadow"}, -- will not use this fruit to raids or anyting
+    ["Safe Fruit"] = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- will not use this fruit to raids or anyting
+
+    -- Webhook
+    ["Link Webhook"] = "https://discord.com/api/webhooks/1205413016729030686/96TudPil4wVaGrZ9qw3oAWcwTSoMviW0pn3s4z7SDtPPxfURVAnu5DshApE8Z36loB5f",
+    ["Start Webhook"] = true,
+    ["Webhook Mode"] = "Send Every .. min", -- "Send Every .. min","Send On Level Max","Send On Level Max And Every .. min"
+    ["Webhook Minute"] = 10, -- mean 10 Minute
+    ["tag user"] = true,
+    ["Send Test Webhook"] = false,
 }
+
 _G.Key = "PRGFJ-I050F-19HI0"
 _G.DiscordId = "1086893151513477131"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
