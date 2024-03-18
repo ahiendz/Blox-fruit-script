@@ -64,7 +64,7 @@ getgenv().Configs = {
     WebhookMode = "Send Every 10 min", -- "Send Every 10 min","Send On Level Max And Every 10 min"
     LockFPS = 120,
     LockFPSNow = true,
-    WhiteScreen = false
+    WhiteScreen = true
 }
 _G.Key = "LuxuryV2_n6d9ub6t47vley6acice"
 _G.DiscordId = "1086893151513477131"
